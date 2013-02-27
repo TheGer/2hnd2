@@ -1,0 +1,15 @@
+﻿<Properties GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MouseController.js">
+    <Files>
+      <File FileName="Assets\CatController.js" Line="71" Column="2" />
+      <File FileName="Assets\BordersScript.js" Line="13" Column="28" />
+      <File FileName="Assets\MouseController.js" Line="97" Column="19" />
+      <File FileName="Assets\FishGenerator.js" Line="21" Column="27" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
