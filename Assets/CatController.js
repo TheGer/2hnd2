@@ -63,6 +63,11 @@ function OnTriggerEnter(other:Collider)
 
 
 function Update () {
+	
+	
+	
+	
+	
 	if (Input.GetKeyDown(KeyCode.R))
 	{
 		//r is pressed
@@ -86,9 +91,16 @@ function Update () {
 		currentX = transform.position.x;
 		currentY = transform.position.y;
 	
-	
-		transform.Translate(Vector3.right * speed * Input.GetAxis("Horizontal") * Time.deltaTime);
-		transform.Translate(Vector3.up * speed * Input.GetAxis("Vertical") * Time.deltaTime);
+		//move horizontally
+		transform.Translate(Vector3.right * speed * Input.GetAxis("Horizontal") * Time.deltaTime,Space.World);
+		
+		//rotate horizontally on itself
+		transform.Rotate(Vector3.forward * 20 * Time.deltaTime);
+		
+		//rotate horizontally (like a car)
+		//transform.Rotate(Vector3.forward * 20 * Input.GetAxis("Horizontal") * Time.deltaTime);
+		
+		transform.Translate(Vector3.up * speed * Input.GetAxis("Vertical") * Time.deltaTime,Space.World);
 	}
 	//x coordinates -- border
 	if (transform.position.x > BordersScript.rightmost)
